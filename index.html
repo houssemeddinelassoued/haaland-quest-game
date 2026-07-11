@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Haaland Quest</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #0b1020;
+      height: 100%;
+      overflow: hidden;
+      font-family: monospace;
+    }
+    #game-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    canvas {
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      box-shadow: 0 0 60px rgba(108, 171, 221, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container"></div>
+  <script src="assets/vendor/phaser.min.js"></script>
+  <script src="src/audio.js"></script>
+  <script src="src/textures.js"></script>
+  <script src="src/levels.js"></script>
+  <script src="src/game.js"></script>
+</body>
+</html>
